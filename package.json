@@ -1,0 +1,29 @@
+{
+  "name": "xmas21",
+  "version": "1.0.0",
+  "description": "Proyecto grupal EPPR 2021",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EPPR/xmas21.git"
+  },
+  "keywords": [
+    "EPPR"
+  ],
+  "author": "EPPR @ lxps",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "ngrok": "^4.2.2",
+    "socket.io": "^4.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/EPPR/xmas21/issues"
+  },
+  "homepage": "https://github.com/EPPR/xmas21#readme"
+}
