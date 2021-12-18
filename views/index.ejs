@@ -40,6 +40,7 @@
     console.log(welcome)
   });
   socket.on('result', function (result) {
+    $('.resultDice').hide()
     // Show Dice Animation and Hide the Main Dice image.
     $('.mainDice').hide();
     $('.gif').show();
