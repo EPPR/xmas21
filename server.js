@@ -25,6 +25,20 @@ function generateRandomDigits(){
 function resultLog(csv){
     // En esta función ejecutar shell o línea de comandos para guardar el log en un archivo.
     // Ver ejemplo de comando "exec()" (Línea 36, branch original)
+    var cli = `echo "${csv}" >> resultados.log`
+    exec(cli,(error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+        // Limpiar respuesta, usualmente incluye multiples entradas de línea "\n"
+        var cmdResult = stdout.replace("\n", "").replace("\n", "")
+        console.log(`Resultado : ${cmdResult}`);
+    });
 
     // Esta línea va a imprimir en consola del servidor.
     console.log(`Nueva línea en log: ${csv}`)
