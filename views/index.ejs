@@ -69,7 +69,7 @@ function requestResult ( ){
     socket.emit('request', { ip: myAddress });
 }
 
-$('#start').click(()=>{
+$('#jugar').click(()=>{
   console.log('Dice Tossed, waiting for server')
   requestResult()
 })
