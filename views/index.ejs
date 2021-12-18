@@ -48,6 +48,7 @@
       // Get random number from server
       var number = result.data.number
       // Load new image from static assets
+      // Muestra la imagen correcta del resultado
       var file = `/images/dice-${number}.png`
       // Replace the image on the HTML
       $('.resultDice').attr('src', file)
