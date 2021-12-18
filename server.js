@@ -14,12 +14,12 @@ app.use(express.static('public'))
 const port = 3000;
 
 function generateRandomDigits(){
-    var result = 0
+    var result = Math.ceil(Math.random()*6)
 
     // result = ???
     // Algoritmo para generar un número aleatorio de 1 al 6.
 
-    return result
+    return result 
 }
 
 function resultLog(csv){
