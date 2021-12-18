@@ -70,6 +70,7 @@ function requestResult ( ){
 }
 
 $('#jugar').click(()=>{
+  $('.resultDice').hide()
   console.log('Dice Tossed, waiting for server')
   requestResult()
 })
